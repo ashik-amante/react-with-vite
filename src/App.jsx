@@ -5,9 +5,15 @@ import './App.css'
 import Todo from './todo'
 import Actor from './Actor'
 import Singer from './Singers'
+import Player from './player'
+import Bookstore from './Bookstore'
 
 function App() {
-  const actors = ['Bapparaz', 'rubel','Zosim', 'salman']
+  const actors = [
+    {name: 'salman ', age:23, salary:35},
+    {name: 'balman ', age:65, salary:4333555},
+    {name: 'talman ', age:56, salary:3355},
+  ]
 
   const singers = [
     {id:1, name: 'mahfuzur', age:54},
@@ -15,13 +21,28 @@ function App() {
     {id:1, name: 'kallu mamma mastan', age:5874},
   ]
 
+
+  const players =[
+    {name:'sakib', age: 43, salary:400000},
+    {name:'miraz', age: 44, salary:400000},
+    {name:'santo', age: 22, salary:400000},
+  ]
+
+  const books = [
+    {id:1, name: 'math', price:234 , author:'Josim Uddin'},
+    {id:1, name: 'Physics', price:655 , author:'topn mia'},
+    {id:1, name: 'chemistry', price:666 , author:'Guho Dado'},
+    {id:1, name: 'Biology', price:666 , author:'Azmal vai'},
+  ]
   return (
     <>
       <h1>Vite + React</h1>
 
-
-
-
+      <Bookstore books = {books}></Bookstore>
+      
+      {/* {
+        players.map(kheloar => <Player player = {kheloar}></Player>)
+      } */}
 
 
       {/* <Actor name={'Bapparaz'}></Actor> */}
